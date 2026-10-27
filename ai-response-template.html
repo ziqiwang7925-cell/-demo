@@ -1,0 +1,154 @@
+<style>@font-face{font-family:'DIN Alternate';src:url('./fonts/DIN Alternate Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}.response-tools{width:311px;padding-top:8px;display:flex;flex-direction:column;gap:16px}.response-divider{height:1px;background:rgba(0,0,0,.05)}.response-actions{display:flex;gap:16px;align-items:center}.response-action{display:flex;align-items:center;justify-content:center;width:20px;height:20px;border:0;padding:0;background:transparent;cursor:pointer}.response-action img{display:block;width:20px;height:20px}.response-action:focus-visible{outline:2px solid #09167d;outline-offset:4px;border-radius:3px}.response-disclaimer{font-size:12px;line-height:15.6px;color:#b7c0ca}.reminder-icon{display:block;width:24px;height:24px;flex:0 0 24px;object-fit:contain}.reminder-heading{display:flex;align-items:center;gap:8px}</style>
+<template id="ai-response-template"><article class="ai-response" aria-label="AI回答" style="width: 343px; padding-left: 16px; padding-right: 16px; padding-top: 20px; padding-bottom: 20px; background: rgba(255, 255, 255, 0.65); border-top-right-radius: 24px; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+  <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: flex">
+    <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+      <div style="justify-content: flex-start; align-items: center; gap: 4px; display: inline-flex">
+        <div style="color: rgba(0, 0, 0, 0.22); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word" data-slot="source">参考您8.1号-9.1号平台内消费账单</div>
+        <div style="width: 20px; height: 20px; position: relative; overflow: hidden">
+          <img src="images/icon/右箭头.svg" width="20" height="20" alt="" style="display:block">
+        </div>
+      </div>
+    </div>
+    <div class="ai-stripe"></div><div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+      <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+        <div style="justify-content: center; align-items: center; gap: 6px; display: inline-flex">
+          <div style="width: 3px; align-self: stretch; background: #09167D; border-radius: 36px"></div>
+          <div style="justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+            <div style="justify-content: center; display: flex; flex-direction: column; color: #09167D; font-size: 18px; font-family: Alimama FangYuanTi; font-weight: 700; line-height: 18px; letter-spacing: 2px; word-wrap: break-word">支出对比概览</div>
+          </div>
+        </div>
+        <div style="align-self: stretch"><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">本月（10 月 1 日 -26 日）你的总支出是 </span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 600; line-height: 23px; word-wrap: break-word">¥3,066.27 元</span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">，共 48 笔消费，比上月（9 月全月）的 </span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 600; line-height: 23px; word-wrap: break-word">¥8,645.95 元</span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word"> 下降了 </span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 600; line-height: 23px; word-wrap: break-word">64.54%</span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">，消费笔数也减少了</span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 600; line-height: 23px; word-wrap: break-word"> 33.33%</span><span style="color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">。上月的高支出主要是几次机票和大额数码消费拉动的，本月消费回归日常节奏，整体更平稳。</span></div>
+      </div>
+      <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 18px; display: flex">
+        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+          <div style="width: 150px; padding-left: 12px; padding-right: 12px; padding-top: 18px; padding-bottom: 18px; background: linear-gradient(331deg, rgba(255, 0, 111, 0) 16%, rgba(255, 0, 110.50, 0.05) 100%); border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+            <div style="width: 122px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: flex">
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">¥</div>
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">3,066.27</div>
+              </div>
+              <div style="align-self: stretch; color: rgba(0, 0, 0, 0.60); font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 14.40px; word-wrap: break-word">本月总支出</div>
+            </div>
+          </div>
+          <div style="width: 150px; padding-left: 12px; padding-right: 12px; padding-top: 18px; padding-bottom: 18px; background: linear-gradient(331deg, rgba(0, 131, 255, 0) 16%, rgba(0, 131, 255, 0.05) 100%); border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+            <div style="width: 122px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: flex">
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">¥</div>
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">1,820.50</div>
+              </div>
+              <div style="align-self: stretch; color: rgba(0, 0, 0, 0.60); font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 14.40px; word-wrap: break-word">本月总收入</div>
+            </div>
+          </div>
+        </div>
+        <div style="align-self: stretch; justify-content: space-between; align-items: flex-start; display: inline-flex">
+          <div style="width: 150px; padding-left: 12px; padding-right: 12px; padding-top: 18px; padding-bottom: 18px; background: linear-gradient(331deg, rgba(255, 0, 111, 0) 16%, rgba(255, 0, 110.50, 0.05) 100%); border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+            <div style="width: 122px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: flex">
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">¥</div>
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">1,245.77</div>
+              </div>
+              <div style="align-self: stretch; color: rgba(0, 0, 0, 0.60); font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 14.40px; word-wrap: break-word">本月净结余</div>
+            </div>
+          </div>
+          <div style="width: 150px; padding-left: 12px; padding-right: 12px; padding-top: 18px; padding-bottom: 18px; background: linear-gradient(331deg, rgba(0, 131, 255, 0) 16%, rgba(0, 131, 255, 0.05) 100%); border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
+            <div style="width: 122px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 6px; display: flex">
+              <div style="justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">¥</div>
+                <div style="color: black; font-size: 24px; font-family: DIN Alternate; font-weight: 700; line-height: 24px; word-wrap: break-word">820.00</div>
+              </div>
+              <div style="align-self: stretch; color: rgba(0, 0, 0, 0.60); font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 14.40px; word-wrap: break-word">待还金额</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+      <div style="justify-content: center; align-items: center; gap: 6px; display: inline-flex">
+        <div style="width: 3px; align-self: stretch; background: #09167D; border-radius: 36px"></div>
+        <div style="justify-content: flex-start; align-items: center; gap: 8px; display: flex">
+          <div style="justify-content: center; display: flex; flex-direction: column; color: #09167D; font-size: 18px; font-family: Alimama FangYuanTi; font-weight: 700; line-height: 18px; letter-spacing: 2px; word-wrap: break-word">消费结构分析</div>
+        </div>
+      </div>
+      <div style="align-self: stretch; color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">从消费分类来看，交通出行、数码电器和信用借还是值得重点关注的项目。可切换本月与上月数据，比较各类支出的变化，找出影响账单的大额开销。</div>
+      <div class="month-chart bubble-month-chart" data-month-filter="both" style="width: 311px; height: 252px; position: relative">
+        <div style="width: 311px; height: 252px; left: 0px; top: 0px; position: absolute; background: white; border-radius: 20px"></div>
+        <div style="left: 14px; top: 15px; position: absolute; color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">本月与上月消费类目对比</div>
+        <div style="width: 283px; left: 14px; top: 56px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex">
+          <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
+            <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+              <div style="width: 253px; height: 0px; outline: 1px rgba(238, 242, 245, 0.60) solid; outline-offset: -0.50px"></div>
+              <div style="text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 12px; font-family: DIN Alternate; font-weight: 500; line-height: 12px; word-wrap: break-word">6,000</div>
+            </div>
+          </div>
+          <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+            <div style="width: 253px; height: 0px; outline: 1px rgba(238, 242, 245, 0.60) solid; outline-offset: -0.50px"></div>
+            <div style="text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 12px; font-family: DIN Alternate; font-weight: 500; line-height: 12px; word-wrap: break-word">4,000</div>
+          </div>
+          <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+            <div style="width: 253px; height: 0px; outline: 1px rgba(238, 242, 245, 0.60) solid; outline-offset: -0.50px"></div>
+            <div style="text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 12px; font-family: DIN Alternate; font-weight: 500; line-height: 12px; word-wrap: break-word">3,000</div>
+          </div>
+          <div style="align-self: stretch; justify-content: space-between; align-items: center; display: inline-flex">
+            <div style="width: 253px; height: 0px; outline: 1px rgba(238, 242, 245, 0.60) solid; outline-offset: -0.50px"></div>
+            <div style="text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 12px; font-family: DIN Alternate; font-weight: 500; line-height: 12px; word-wrap: break-word">1,000</div>
+          </div>
+          <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 11px; display: inline-flex">
+            <div style="width: 253px; height: 0px; outline: 1px #EEF2F5 solid; outline-offset: -0.50px"></div>
+            <div style="text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 12px; font-family: DIN Alternate; font-weight: 500; line-height: 12px; word-wrap: break-word">0</div>
+          </div>
+        </div>
+        <div style="width: 256.74px; left: 14px; top: 206px; position: absolute; justify-content: flex-start; align-items: center; display: inline-flex">
+          <div style="flex: 1 1 0; text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 10px; font-family: PingFang SC; font-weight: 400; line-height: 10px; word-wrap: break-word">信用借还</div>
+          <div style="flex: 1 1 0; text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 10px; font-family: PingFang SC; font-weight: 400; line-height: 10px; word-wrap: break-word">交通出行</div>
+          <div style="flex: 1 1 0; text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 10px; font-family: PingFang SC; font-weight: 400; line-height: 10px; word-wrap: break-word">服饰装扮</div>
+          <div style="flex: 1 1 0; text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 10px; font-family: PingFang SC; font-weight: 400; line-height: 10px; word-wrap: break-word">餐饮美食</div>
+          <div style="flex: 1 1 0; text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 10px; font-family: PingFang SC; font-weight: 400; line-height: 10px; word-wrap: break-word">数码电器</div>
+        </div>
+        <div style="left: 26px; top: 61px; height:128px; position: absolute; justify-content: flex-end; align-items: flex-end; gap: 23px; display: inline-flex">
+          <div style="justify-content: flex-start; align-items: flex-end; display: flex">
+            <div class="month-bar" data-series="current" style="width: 14px; height: 92px; background: linear-gradient(180deg, rgba(255, 0, 38, 0.40) 0%, rgba(255, 0, 38, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+            <div class="month-bar" data-series="previous" style="width: 14px; height: 64px; background: linear-gradient(180deg, rgba(0, 131, 255, 0.50) 0%, rgba(0, 131, 255, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+          </div>
+          <div style="justify-content: flex-start; align-items: flex-end; display: flex">
+            <div class="month-bar" data-series="current" style="width: 14px; height: 112px; background: linear-gradient(180deg, rgba(255, 0, 38, 0.40) 0%, rgba(255, 0, 38, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+            <div class="month-bar" data-series="previous" style="width: 14px; height: 79px; background: linear-gradient(180deg, rgba(0, 131, 255, 0.50) 0%, rgba(0, 131, 255, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+          </div>
+          <div style="justify-content: flex-start; align-items: flex-end; display: flex">
+            <div class="month-bar" data-series="current" style="width: 14px; height: 55px; background: linear-gradient(180deg, rgba(255, 0, 38, 0.40) 0%, rgba(255, 0, 38, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+            <div class="month-bar" data-series="previous" style="width: 14px; height: 38px; background: linear-gradient(180deg, rgba(0, 131, 255, 0.50) 0%, rgba(0, 131, 255, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+          </div>
+          <div style="justify-content: flex-start; align-items: flex-end; display: flex">
+            <div class="month-bar" data-series="current" style="width: 14px; height: 76px; background: linear-gradient(180deg, rgba(255, 0, 38, 0.40) 0%, rgba(255, 0, 38, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+            <div class="month-bar" data-series="previous" style="width: 14px; height: 57px; background: linear-gradient(180deg, rgba(0, 131, 255, 0.50) 0%, rgba(0, 131, 255, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+          </div>
+          <div style="justify-content: flex-start; align-items: flex-end; display: flex">
+            <div class="month-bar" data-series="current" style="width: 14px; height: 100px; background: linear-gradient(180deg, rgba(255, 0, 38, 0.40) 0%, rgba(255, 0, 38, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+            <div class="month-bar" data-series="previous" style="width: 14px; height: 88px; background: linear-gradient(180deg, rgba(0, 131, 255, 0.50) 0%, rgba(0, 131, 255, 0.01) 100%); border-top-left-radius: 5px; border-top-right-radius: 5px"></div>
+          </div>
+        </div>
+        <div style="left: 285px; top: 32px; position: absolute; text-align: center; color: rgba(98, 109, 120, 0.50); font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 12px; word-wrap: break-word">元</div>
+        <div style="left: 108px; top: 228px; position: absolute; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
+          <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+            <div style="width: 10px; height: 5px; background: var(--digital, #FF0026); border-radius: 18px"></div>
+            <div style="text-align: center; color: #626D78; font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 12px; word-wrap: break-word">本月</div>
+          </div>
+          <div style="justify-content: flex-start; align-items: center; gap: 4px; display: flex">
+            <div style="width: 10px; height: 5px; background: var(--other, #168BFF); border-radius: 34px"></div>
+            <div style="text-align: center; color: #626D78; font-size: 12px; font-family: PingFang SC; font-weight: 400; line-height: 14.40px; word-wrap: break-word">上月</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width: 311px; padding-left: 14px; padding-right: 14px; padding-top: 16px; padding-bottom: 16px; background: rgba(255, 0, 38, 0.04); border-radius: 15px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+      <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+          <img class="reminder-icon" src="images/icon/Agent/温馨提示.svg" width="24" height="24" alt="">
+          <div style="color: black; font-size: 16px; font-family: PingFang SC; font-weight: 500; line-height: 16px; word-wrap: break-word">小宝提醒</div>
+        </div>
+        <div style="align-self: stretch; color: rgba(0, 0, 0, 0.60); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">本月还有 ¥820.00 待还，建议提前核对还款日期并预留资金。查看消费账单时，注意区分日常开销与信用还款，避免重复计算支出。</div>
+      </div>
+    </div>
+    <div style="align-self: stretch; color: var(--Text---Primary, #101820); font-size: 15px; font-family: PingFang SC; font-weight: 400; line-height: 23px; word-wrap: break-word">整体来看，上月支出主要集中在交通和大件数码上，本月则更偏向日常消费和信用还款。需要我帮你看看具体的消费习惯分析，或者规划下个月的预算吗？</div>
+<div class="response-tools"><div class="response-divider"></div><div class="response-actions"><button type="button" class="response-action" data-action="copy" aria-label="复制"><img src="images/icon/复制 copy.svg" width="20" height="20" alt=""></button><button type="button" class="response-action" data-action="like" aria-label="点赞" aria-pressed="false"><img src="images/icon/点赞.svg" width="20" height="20" alt=""></button><button type="button" class="response-action" data-action="dislike" aria-label="差评" aria-pressed="false"><img src="images/icon/踩踏.svg" width="20" height="20" alt=""></button><button type="button" class="response-action" data-action="share" aria-label="转发"><img src="images/icon/转发.svg" width="20" height="20" alt=""></button></div><div class="response-disclaimer">答案由AI生成，仅供参考</div></div>
+  </div>
+</article></template>
